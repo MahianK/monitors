@@ -93,7 +93,7 @@ class checkStock:
                 embed.set_timestamp()
                 embed.add_embed_field(name='SKU', value= self.stores[key][4])
                 embed.add_embed_field(name='Price', value= self.stores[key][5])
-                embed.add_embed_field(name='', value='')
+                embed.add_embed_field(name='᲼᲼', value='᲼᲼')
                 embed.add_embed_field(name='Field 4', value='sadipscing elitr')
                 webhook.add_embed(embed)
                 response = webhook.execute()
@@ -103,7 +103,7 @@ class checkStock:
         self.runCheck(interval)
     
 
-checkStock().runCheck(2)
+checkStock().runCheck(1.33)
 
 
 
