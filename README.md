@@ -4,9 +4,6 @@ A Python availability monitor that checks Best Buy product pages and sends real-
 
 The monitor uses Requests and Beautiful Soup to inspect each product page for an active **Add to Cart** button. Results are printed to the terminal with timestamps, and in-stock products trigger a Discord embed containing the product name, link, SKU, and price.
 
-> [!IMPORTANT]
-> The current source contains a hard-coded Discord webhook URL. Revoke that webhook in Discord before using or publishing the project, then replace it with a new webhook loaded from an environment variable. Never commit webhook URLs or other credentials.
-
 ## Features
 
 - Monitors multiple Best Buy product pages in sequence
