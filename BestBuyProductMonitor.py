@@ -86,7 +86,7 @@ class checkStock:
             myResult = self.getButton(self.stores[key][0], self.stores[key][1])
             if self.stores[key][2] in str(myResult):
                 os.system("echo \033[32m" + f'[{datetime.now()}] :: {key}: {self.stores[key][3]}')
-                webhook = DiscordWebhook(url='https://discord.com/api/webhooks/939686697359249468/g1bn6b9JGhsV93zCgk_W2i8j9m35hwnTnrWm3UaK1NhSBcbLlKdhDppzKVKxJ2iM_M0m', username="Best Buy")
+                webhook = DiscordWebhook(url='[insert webhook here]', username="Best Buy")
                 embed = DiscordEmbed(title= self.stores[key][3], description= "Available NOW", url=self.stores[key][0], color=242424)
                 embed.set_author(name='https://www.bestbuy.com/ -- by Mahian', url='', icon_url='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fbestbuy%2F&psig=AOvVaw1xgtOM3y03-F8pbfrLyGJR&ust=1644195619713000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjm95Lw6fUCFQAAAAAdAAAAABAD')
                 embed.set_footer(text='Embed Footer Text', url='')
